@@ -1,1 +1,27 @@
-this is demo of jenkins demo fie
+pipeline {
+    agent any
+    stages {
+        stage("test") {
+            steps {
+                echo 'testing application'
+            }
+
+      }
+       stage("run") {
+            steps {
+                echo 'running application'
+            }
+        }
+         stage("commit") {
+            steps {
+                echo 'commit all application'
+           }
+        }
+         stage("production") {
+            steps {
+                echo 'production appilication'
+            }
+        }
+    }
+}
+
